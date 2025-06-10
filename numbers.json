@@ -1,0 +1,130 @@
+{
+    "jsonrpc": "2.0",
+    "id": "number",
+    "result": {
+        "data": [
+            {
+                "id": 167781,
+                "prefix": "7495",
+                "category": "usual",
+                "min_charge": 0,
+                "phone_number": "74950219785",
+                "location_name": "\u041c\u043e\u0441\u043a\u0432\u0430",
+                "monthly_charge": 290.0,
+                "onetime_payment": 250.0,
+                "location_mnemonic": "msk"
+            },
+            {
+                "id": 256328,
+                "prefix": "7495",
+                "category": "usual",
+                "min_charge": 0,
+                "phone_number": "74950230583",
+                "location_name": "\u041c\u043e\u0441\u043a\u0432\u0430",
+                "monthly_charge": 290.0,
+                "onetime_payment": 250.0,
+                "location_mnemonic": "msk"
+            },
+            {
+                "id": 257117,
+                "prefix": "7495",
+                "category": "usual",
+                "min_charge": 0,
+                "phone_number": "74950231372",
+                "location_name": "\u041c\u043e\u0441\u043a\u0432\u0430",
+                "monthly_charge": 290.0,
+                "onetime_payment": 250.0,
+                "location_mnemonic": "msk"
+            },
+            {
+                "id": 258138,
+                "prefix": "7495",
+                "category": "usual",
+                "min_charge": 0,
+                "phone_number": "74950232393",
+                "location_name": "\u041c\u043e\u0441\u043a\u0432\u0430",
+                "monthly_charge": 290.0,
+                "onetime_payment": 250.0,
+                "location_mnemonic": "msk"
+            },
+            {
+                "id": 259687,
+                "prefix": "7495",
+                "category": "usual",
+                "min_charge": 0,
+                "phone_number": "74950233942",
+                "location_name": "\u041c\u043e\u0441\u043a\u0432\u0430",
+                "monthly_charge": 290.0,
+                "onetime_payment": 250.0,
+                "location_mnemonic": "msk"
+            },
+            {
+                "id": 260085,
+                "prefix": "7495",
+                "category": "usual",
+                "min_charge": 0,
+                "phone_number": "74950234340",
+                "location_name": "\u041c\u043e\u0441\u043a\u0432\u0430",
+                "monthly_charge": 290.0,
+                "onetime_payment": 250.0,
+                "location_mnemonic": "msk"
+            },
+            {
+                "id": 260663,
+                "prefix": "7495",
+                "category": "usual",
+                "min_charge": 0,
+                "phone_number": "74950234918",
+                "location_name": "\u041c\u043e\u0441\u043a\u0432\u0430",
+                "monthly_charge": 290.0,
+                "onetime_payment": 250.0,
+                "location_mnemonic": "msk"
+            },
+            {
+                "id": 261789,
+                "prefix": "7495",
+                "category": "usual",
+                "min_charge": 0,
+                "phone_number": "74950236044",
+                "location_name": "\u041c\u043e\u0441\u043a\u0432\u0430",
+                "monthly_charge": 290.0,
+                "onetime_payment": 250.0,
+                "location_mnemonic": "msk"
+            },
+            {
+                "id": 262056,
+                "prefix": "7495",
+                "category": "usual",
+                "min_charge": 0,
+                "phone_number": "74950236311",
+                "location_name": "\u041c\u043e\u0441\u043a\u0432\u0430",
+                "monthly_charge": 290.0,
+                "onetime_payment": 250.0,
+                "location_mnemonic": "msk"
+            },
+            {
+                "id": 262319,
+                "prefix": "7495",
+                "category": "usual",
+                "min_charge": 0,
+                "phone_number": "74950236574",
+                "location_name": "\u041c\u043e\u0441\u043a\u0432\u0430",
+                "monthly_charge": 290.0,
+                "onetime_payment": 250.0,
+                "location_mnemonic": "msk"
+            }
+        ],
+        "metadata": {
+            "total_items": 10,
+            "version": null,
+            "limits": {
+                "day_limit": 500,
+                "day_remaining": 457,
+                "day_reset": 58885,
+                "minute_limit": 60,
+                "minute_remaining": 59,
+                "minute_reset": 25
+            }
+        }
+    }
+}

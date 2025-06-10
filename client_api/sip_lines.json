@@ -1,0 +1,53 @@
+{
+    "9705255": [
+        {
+            "id": 5027167,
+            "type": "in_out",
+            "status": "active",
+            "dial_time": 60,
+            "employee_id": 9705255,
+            "ip_addresses": [],
+            "phone_number": "0487908",
+            "billing_state": "active",
+            "channels_count": 1,
+            "physical_state": "\u041d\u0435 \u0437\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043e\u0432\u0430\u043d",
+            "employee_full_name": "Oplesnin Ivan Sergeevich",
+            "virtual_phone_number": "74950237547",
+            "virtual_phone_usage_rule": "fixed"
+        }
+    ],
+    "9701525": [
+        {
+            "id": 5024552,
+            "type": "in",
+            "status": "active",
+            "dial_time": 60,
+            "employee_id": 9701525,
+            "ip_addresses": [],
+            "phone_number": "0486681",
+            "billing_state": "active",
+            "channels_count": 2,
+            "physical_state": "\u041d\u0435 \u0437\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043e\u0432\u0430\u043d",
+            "employee_full_name": "\u0410\u043f\u043b\u0435\u0441\u043d\u0438\u043d \u0418\u0432\u0430\u043d 2",
+            "virtual_phone_number": null,
+            "virtual_phone_usage_rule": null
+        }
+    ],
+    "9699580": [
+        {
+            "id": 5023552,
+            "type": "in_out",
+            "status": "active",
+            "dial_time": 60,
+            "employee_id": 9699580,
+            "ip_addresses": [],
+            "phone_number": "0486173",
+            "billing_state": "active",
+            "channels_count": 2,
+            "physical_state": "\u041d\u0435 \u0437\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043e\u0432\u0430\u043d",
+            "employee_full_name": "\u0418\u0432\u0430\u043d \u041e\u043f\u043b\u0435\u0441\u043d\u0438\u043d",
+            "virtual_phone_number": "74950853409",
+            "virtual_phone_usage_rule": "fixed"
+        }
+    ]
+}

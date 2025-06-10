@@ -1,0 +1,112 @@
+{
+    "jsonrpc": "2.0",
+    "id": "number",
+    "result": {
+        "data": [
+            {
+                "id": 1841736,
+                "name": null,
+                "type": "va",
+                "prefix": "7495",
+                "status": "active",
+                "comment": null,
+                "callouts": [],
+                "category": "usual",
+                "callbacks": [],
+                "campaigns": [],
+                "scenarios": [
+                    {
+                        "is_active": true,
+                        "scenario_id": 528589,
+                        "scenario_name": "\u0422\u0435\u0441\u0442\u043e\u0432\u044b\u0439 \u0441\u0446\u0435\u043d\u0430\u0440\u0438\u0439",
+                        "call_processing_rule_id": 1618362
+                    }
+                ],
+                "activation_date": "2025-05-30 12:51:53",
+                "virtual_phone_number": "74950853409",
+                "redirection_phone_number": null,
+                "number_capacity_choice_rule_names": null
+            },
+            {
+                "id": 1841741,
+                "name": null,
+                "type": "va",
+                "prefix": "7495",
+                "status": "active",
+                "comment": null,
+                "callouts": [],
+                "category": "usual",
+                "callbacks": [],
+                "campaigns": [],
+                "scenarios": [],
+                "activation_date": "2025-05-30 12:51:53",
+                "virtual_phone_number": "74950853450",
+                "redirection_phone_number": null,
+                "number_capacity_choice_rule_names": null
+            },
+            {
+                "id": 1841746,
+                "name": null,
+                "type": "va",
+                "prefix": "7495",
+                "status": "active",
+                "comment": null,
+                "callouts": [],
+                "category": "usual",
+                "callbacks": [],
+                "campaigns": [],
+                "scenarios": [],
+                "activation_date": "2025-05-30 12:51:53",
+                "virtual_phone_number": "74950853672",
+                "redirection_phone_number": null,
+                "number_capacity_choice_rule_names": null
+            },
+            {
+                "id": 1847491,
+                "name": null,
+                "type": "va",
+                "prefix": "7495",
+                "status": "active",
+                "comment": null,
+                "callouts": [],
+                "category": "usual",
+                "callbacks": [],
+                "campaigns": [],
+                "scenarios": [],
+                "activation_date": "2025-06-04 09:36:37",
+                "virtual_phone_number": "74953241739",
+                "redirection_phone_number": null,
+                "number_capacity_choice_rule_names": null
+            },
+            {
+                "id": 1847501,
+                "name": null,
+                "type": "va",
+                "prefix": "7495",
+                "status": "active",
+                "comment": null,
+                "callouts": [],
+                "category": "usual",
+                "callbacks": [],
+                "campaigns": [],
+                "scenarios": [],
+                "activation_date": "2025-06-04 09:48:13",
+                "virtual_phone_number": "74953244487",
+                "redirection_phone_number": null,
+                "number_capacity_choice_rule_names": null
+            }
+        ],
+        "metadata": {
+            "total_items": 5,
+            "version": null,
+            "limits": {
+                "day_limit": 500,
+                "day_remaining": 493,
+                "day_reset": 61095,
+                "minute_limit": 60,
+                "minute_remaining": 59,
+                "minute_reset": 15
+            }
+        }
+    }
+}

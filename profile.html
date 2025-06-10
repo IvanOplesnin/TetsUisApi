@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Наши стили -->
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">Личный кабинет</a>
+            <button class="btn btn-outline-light" id="logoutBtn">Выйти</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Основная информация о пользователе -->
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header bg-white">
+                        <h4 class="mb-0">Профиль пользователя</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row" id="userInfo">
+                            <div class="col-md-6">
+                                <p><strong>Имя:</strong> <span id="fullname">Загрузка...</span></p>
+                                <p><strong>Email:</strong> <span id="email">Загрузка...</span></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>ID:</strong> <span id="userId">Загрузка...</span></p>
+                                <p><strong>Статус:</strong> <span id="isAdmin">Загрузка...</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Вкладки для счетов и транзакций -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="accounts-tab" data-bs-toggle="tab" data-bs-target="#accounts" type="button" role="tab">Мои счета</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="transactions-tab" data-bs-toggle="tab" data-bs-target="#transactions" type="button" role="tab">Транзакции</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Демо-платежи</h5>
+                            <p class="card-text">Тестовая система платежей для демонстрации работы</p>
+                            <a href="webhook.html" class="btn btn-primary">
+                                <i class="bi bi-credit-card"></i> Тестовый платеж
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Вкладка счетов -->
+                    <div class="tab-pane fade show active" id="accounts" role="tabpanel">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4>Мои счета</h4>
+                            <button class="btn btn-sm btn-primary" id="refreshAccounts">Обновить</button>
+                        </div>
+                        <div class="row" id="accountsList">
+                            <div class="col-12">
+                                <div class="alert alert-info">Загрузка данных...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вкладка транзакций -->
+                    <div class="tab-pane fade" id="transactions" role="tabpanel">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4>История транзакций</h4>
+                            <button class="btn btn-sm btn-primary" id="refreshTransactions">Обновить</button>
+                        </div>
+                        <div id="transactionsList">
+                            <div class="alert alert-info">Загрузка данных...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+<!-- Админ панель -->        
+<div class="row mt-4" id="adminSection" style="display: none;">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header bg-white">
+                <h4 class="mb-0">Административная панель</h4>
+            </div>
+            <div class="card-body">
+                <ul class="nav nav-tabs mb-4" id="adminTabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#adminUsers">Пользователи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#adminAccounts">Все счета</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <!-- Вкладка пользователей -->
+                    <div class="tab-pane fade show active" id="adminUsers">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h5>Управление пользователями</h5>
+                            <button class="btn btn-sm btn-success" id="createUserBtn">
+                                <i class="bi bi-plus-circle"></i> Добавить
+                            </button>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>ФИО</th>
+                                        <th>Email</th>
+                                        <th>Статус</th>
+                                        <th>Счетов</th>
+                                        <th>Транзакций</th>
+                                        <th>Действия</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="usersList"></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Вкладка всех счетов -->
+                    <div class="tab-pane fade" id="adminAccounts">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h5>Все счета системы</h5>
+                            <button class="btn btn-sm btn-primary" id="refreshAdminData">
+                                <i class="bi bi-arrow-clockwise"></i> Обновить
+                            </button>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Владелец</th>
+                                        <th>Баланс</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="allAccountsList"></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно для создания/редактирования пользователя -->
+<div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Добавить пользователя</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="userForm">
+                    <input type="hidden" id="userId_modal">
+                    <div class="mb-3">
+                        <label for="fullname" class="form-label">ФИО</label>
+                        <input type="text" class="form-control" id="fullname_modal" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email_modal" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Пароль</label>
+                        <input type="password" class="form-control" id="password_modal">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="isAdmin_modal">
+                        <label class="form-check-label" for="isAdmin">Администратор</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary" id="saveUserBtn">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+    <!-- Bootstrap 5 JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Наш JavaScript -->
+    <script src="profile.js"></script>
+</body>
+</html>

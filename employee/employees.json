@@ -1,0 +1,222 @@
+{
+    "jsonrpc": "2.0",
+    "id": "number",
+    "result": {
+        "data": [
+            {
+                "id": 9705255,
+                "coach": {},
+                "email": null,
+                "login": null,
+                "groups": [],
+                "status": "available",
+                "operator": {},
+                "extension": {
+                    "extension_phone_number": "13",
+                    "extension_queue_enabled": false,
+                    "extension_voice_mail_enabled": false
+                },
+                "full_name": "Oplesnin Ivan Sergeevich",
+                "last_name": "Oplesnin",
+                "status_id": 27452448,
+                "first_name": "Ivan",
+                "patronymic": "Sergeevich",
+                "photo_link": null,
+                "schedule_id": null,
+                "phone_numbers": [
+                    {
+                        "status": "active",
+                        "phone_id": 5027162,
+                        "dial_time": 30,
+                        "phone_number": "74950237547",
+                        "channels_count": 2,
+                        "phone_in_employee_id": 5789772
+                    },
+                    {
+                        "status": "active",
+                        "phone_id": 5027167,
+                        "dial_time": 60,
+                        "phone_number": "0487908",
+                        "channels_count": 2,
+                        "phone_in_employee_id": 5789777
+                    }
+                ],
+                "schedule_name": null,
+                "call_recording": "all",
+                "operator_sites": [],
+                "calls_available": true,
+                "allowed_in_call_types": [
+                    "external",
+                    "internal"
+                ],
+                "allowed_out_call_types": [
+                    "external",
+                    "internal"
+                ],
+                "operator_workplace_access": null,
+                "in_external_allowed_call_directions": [
+                    "in",
+                    "out"
+                ],
+                "in_internal_allowed_call_directions": [
+                    "in",
+                    "out"
+                ],
+                "out_external_allowed_call_directions": [
+                    "in",
+                    "out"
+                ],
+                "out_internal_allowed_call_directions": [
+                    "in",
+                    "out"
+                ]
+            },
+            {
+                "id": 9701525,
+                "coach": {},
+                "email": "i.oplesnin@comegic.dev",
+                "login": "ivan-test",
+                "groups": [
+                    {
+                        "group_id": 659869,
+                        "group_name": "\u0422\u0435\u0441\u0442\u043e\u0432\u0430\u044f \u0433\u0440\u0443\u043f\u043f\u0430"
+                    }
+                ],
+                "status": "available",
+                "operator": {},
+                "extension": {
+                    "extension_phone_number": "12",
+                    "extension_queue_enabled": false,
+                    "extension_voice_mail_enabled": false
+                },
+                "full_name": "\u0410\u043f\u043b\u0435\u0441\u043d\u0438\u043d \u0418\u0432\u0430\u043d 2",
+                "last_name": "\u0410\u043f\u043b\u0435\u0441\u043d\u0438\u043d",
+                "status_id": 27452448,
+                "first_name": "\u0418\u0432\u0430\u043d 2",
+                "patronymic": null,
+                "photo_link": null,
+                "schedule_id": null,
+                "phone_numbers": [
+                    {
+                        "status": "active",
+                        "phone_id": 5024552,
+                        "dial_time": 60,
+                        "phone_number": "0486681",
+                        "channels_count": 2,
+                        "phone_in_employee_id": 5787142
+                    }
+                ],
+                "schedule_name": null,
+                "call_recording": "all",
+                "operator_sites": [],
+                "calls_available": true,
+                "allowed_in_call_types": [
+                    "external",
+                    "internal"
+                ],
+                "allowed_out_call_types": [
+                    "external",
+                    "internal"
+                ],
+                "operator_workplace_access": false,
+                "in_external_allowed_call_directions": [
+                    "in",
+                    "out"
+                ],
+                "in_internal_allowed_call_directions": [
+                    "in",
+                    "out"
+                ],
+                "out_external_allowed_call_directions": [
+                    "in",
+                    "out"
+                ],
+                "out_internal_allowed_call_directions": [
+                    "in",
+                    "out"
+                ]
+            },
+            {
+                "id": 9699580,
+                "coach": {},
+                "email": "i.oplesnin@uiscom.ru",
+                "login": "i.oplesnin@uiscom.ru",
+                "groups": [
+                    {
+                        "group_id": 659869,
+                        "group_name": "\u0422\u0435\u0441\u0442\u043e\u0432\u0430\u044f \u0433\u0440\u0443\u043f\u043f\u0430"
+                    },
+                    {
+                        "group_id": 659874,
+                        "group_name": "\u0422\u0435\u0441\u0442"
+                    }
+                ],
+                "status": "available",
+                "operator": {},
+                "extension": {
+                    "extension_phone_number": "1",
+                    "extension_queue_enabled": true,
+                    "extension_voice_mail_enabled": true
+                },
+                "full_name": "\u0418\u0432\u0430\u043d \u041e\u043f\u043b\u0435\u0441\u043d\u0438\u043d",
+                "last_name": "\u0418\u0432\u0430\u043d",
+                "status_id": 27452448,
+                "first_name": "\u041e\u043f\u043b\u0435\u0441\u043d\u0438\u043d",
+                "patronymic": null,
+                "photo_link": null,
+                "schedule_id": null,
+                "phone_numbers": [
+                    {
+                        "status": "active",
+                        "phone_id": 5023552,
+                        "dial_time": 60,
+                        "phone_number": "0486173",
+                        "channels_count": 2,
+                        "phone_in_employee_id": 5786237
+                    }
+                ],
+                "schedule_name": null,
+                "call_recording": "all",
+                "operator_sites": [],
+                "calls_available": true,
+                "allowed_in_call_types": [
+                    "external",
+                    "internal"
+                ],
+                "allowed_out_call_types": [
+                    "external",
+                    "internal"
+                ],
+                "operator_workplace_access": false,
+                "in_external_allowed_call_directions": [
+                    "in",
+                    "out"
+                ],
+                "in_internal_allowed_call_directions": [
+                    "in",
+                    "out"
+                ],
+                "out_external_allowed_call_directions": [
+                    "in",
+                    "out"
+                ],
+                "out_internal_allowed_call_directions": [
+                    "in",
+                    "out"
+                ]
+            }
+        ],
+        "metadata": {
+            "total_items": 3,
+            "version": null,
+            "limits": {
+                "day_limit": 500,
+                "day_remaining": 497,
+                "day_reset": 58760,
+                "minute_limit": 60,
+                "minute_remaining": 59,
+                "minute_reset": 20
+            }
+        }
+    }
+}
